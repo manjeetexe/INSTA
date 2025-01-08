@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 import Layout from './Components/Layout';
 import Automation from './pages/Automation';
 import DashBoard from './Components/DashBoard';
+import Integration from './pages/integration';
 import { Home, Zap, LineChart, Cog, User, HelpCircle } from 'lucide-react';
 
 export default function App() {
@@ -104,6 +105,7 @@ export default function App() {
         <Routes>
           <Route path="/dashboard" element={<DashBoard />} />
           <Route path="/automation" element={<Automation />} />
+          <Route path="/integrations" element={<Integration />} />
      
         </Routes>
       </Layout>
