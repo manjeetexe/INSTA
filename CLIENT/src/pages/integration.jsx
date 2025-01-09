@@ -51,47 +51,13 @@ const Integration = () => {
     <div className="space-y-6 p-4 sm:p-6 max-w-7xl mx-auto">
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white">Social Media Integrations</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white"> Integrations</h1>
         
       </div>
 
       {/* Filters and Search */}
       <div className="flex flex-col gap-4">
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
-          <button className="w-full sm:w-auto bg-gray-200 dark:bg-zinc-800 hover:bg-gray-300 dark:hover:bg-zinc-700 text-gray-700 dark:text-gray-300 px-4 py-2 rounded-md flex items-center justify-center transition duration-300 ease-in-out">
-            <FiFilter className="w-5 h-5 mr-2" />
-            Filter
-          </button>
-
-          {/* Dropdown */}
-          <div className="relative w-full sm:w-auto">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex justify-between items-center w-full px-4 py-2 bg-gray-200 dark:bg-zinc-800 text-gray-700 dark:text-gray-300 rounded-md shadow-md focus:outline-none transition duration-300 ease-in-out"
-            >
-              <span>{selectedOption}</span>
-              <FiChevronDown
-                className={`w-5 h-5 transform transition-transform duration-300 ${
-                  isOpen ? 'rotate-180' : 'rotate-0'
-                }`}
-              />
-            </button>
-            {isOpen && (
-              <div className="absolute z-10 mt-2 w-full bg-gray-100 dark:bg-zinc-900 border border-gray-300 dark:border-zinc-700 rounded-md shadow-lg">
-                {options.map((option, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleSelect(option)}
-                    className="block w-full text-left px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-zinc-800 transition duration-300 ease-in-out"
-                  >
-                    {option}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-          
-        </div>
+        
 
         {/* Search */}
         <div className="relative w-full">
