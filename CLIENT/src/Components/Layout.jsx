@@ -56,6 +56,7 @@ const Layout = ({ NavLinks, BottomNavLinks, isSidebarOpen, toggleTheme,setIsSide
                 type="text"
                 className="w-full pl-10 pr-4 py-1 sm:py-2 rounded-md bg-gray-100 dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 text-gray-900 dark:text-white placeholder-gray-600 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Search by name, email or status"
+                
               />
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-600 dark:text-gray-400 w-5 h-5" />
             </div>

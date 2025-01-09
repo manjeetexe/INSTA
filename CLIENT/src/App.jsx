@@ -31,6 +31,7 @@ export default function App() {
       <>
         <Link
           to="/dashboard"
+          onClick={() => setIsSidebarOpen(false)}
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
             isActive('/dashboard') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
           }`}
@@ -40,6 +41,7 @@ export default function App() {
         </Link>
         <Link
           to="/automation"
+          onClick={() => setIsSidebarOpen(false)}
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
             isActive('/automation') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
           }`}
@@ -48,6 +50,7 @@ export default function App() {
           <span>Automations</span>
         </Link>
         <Link
+        onClick={() => setIsSidebarOpen(false)}
           to="/integrations"
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
             isActive('/integrations') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
@@ -58,6 +61,7 @@ export default function App() {
         </Link>
         <Link
           to="/settings"
+          onClick={() => setIsSidebarOpen(false)}
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
             isActive('/settings') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
           }`}
@@ -67,6 +71,7 @@ export default function App() {
         </Link>
         <Link
           to="/plans"
+          onClick={() => setIsSidebarOpen(false)}
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
             isActive('/plans') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
           }`}
@@ -86,6 +91,7 @@ export default function App() {
       <>
         <Link
           to="/profile"
+          onClick={() => setIsSidebarOpen(false)}
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
             isActive('/profile') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
           }`}
@@ -95,6 +101,7 @@ export default function App() {
         </Link>
         <Link
           to="/help"
+          onClick={() => setIsSidebarOpen(false)}
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
             isActive('/help') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
           }`}
