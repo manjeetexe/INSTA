@@ -4,11 +4,12 @@ import Layout from './Components/Layout';
 import Automation from './pages/Automation';
 import DashBoard from './Components/DashBoard';
 import Profile from './pages/profile';
+import Plans from './pages/plans';
 import Settings from './pages/setting';
 import Help from './pages/help';
 import Integration from './pages/integration';
-import {  } from 'lucide-react';
 import { Home, Zap, LineChart,CreditCard, Cog, User, HelpCircle } from 'lucide-react';
+
 
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -65,9 +66,9 @@ export default function App() {
           <span>Settings</span>
         </Link>
         <Link
-          to="/plan"
+          to="/plans"
           className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
-            isActive('/settings') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
+            isActive('/plans') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
           }`}
         >
           <CreditCard className="w-5 h-5" />
@@ -122,6 +123,7 @@ export default function App() {
           <Route path="/settings" element={<Settings/>} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/help" element={<Help />} />
+          <Route path="/plans" element={<Plans />} />
      
         </Routes>
       </Layout>
