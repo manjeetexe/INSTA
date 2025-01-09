@@ -27,6 +27,7 @@ const DashBoard = () => {
           title: 'Answer Questions with AI',
           description: 'Identify and respond to queries with AI',
         },
+        
       ].map((feature, index) => (
         <div
           key={index}

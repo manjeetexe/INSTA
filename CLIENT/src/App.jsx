@@ -3,9 +3,12 @@ import { BrowserRouter, Routes, Route, Link, useLocation } from 'react-router-do
 import Layout from './Components/Layout';
 import Automation from './pages/Automation';
 import DashBoard from './Components/DashBoard';
+import Profile from './pages/profile';
 import Settings from './pages/setting';
+import Help from './pages/help';
 import Integration from './pages/integration';
-import { Home, Zap, LineChart, Cog, User, HelpCircle } from 'lucide-react';
+import {  } from 'lucide-react';
+import { Home, Zap, LineChart,CreditCard, Cog, User, HelpCircle } from 'lucide-react';
 
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -61,6 +64,15 @@ export default function App() {
           <Cog className="w-5 h-5" />
           <span>Settings</span>
         </Link>
+        <Link
+          to="/plan"
+          className={`flex items-center space-x-3 px-3 py-2 rounded-lg ${
+            isActive('/settings') ? 'bg-blue-600 text-white' : 'text-gray-600 dark:text-gray-400 hover:text-white hover:bg-zinc-900'
+          }`}
+        >
+          <CreditCard className="w-5 h-5" />
+          <span>Plans</span>
+        </Link>
       </>
     );
   };
@@ -108,6 +120,8 @@ export default function App() {
           <Route path="/automation" element={<Automation />} />
           <Route path="/integrations" element={<Integration />} />
           <Route path="/settings" element={<Settings/>} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/help" element={<Help />} />
      
         </Routes>
       </Layout>
